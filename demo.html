@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body bgcolor="yellow"><font color="blue"><CENTER><h1>ADDITION</h1></CENTER></font>
+<p style="text-align:left;color: blue;">
+    Number1
+    <span style= "float: right; color:blue;">
+        Number2
+    </span>
+</p>
+<input type="number" name ="first" id="first" step="any"/>
+<input type="number" class="firstinput" name ="second" id="second" step="any"/>
+<select id="ope">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">X</option>
+<option value="/">/</option>
+</select>
+<style>
+.firstinput{
+    float: right;
+}
+.button { 
+  width: 190px;
+  height: 40px;
+  text-size:50px;
+}
+.button1 
+{
+font-size: 10px;
+}
+</style>
+<br/>
+<br/>
+<br/>
+<center><button onclick="cal()" class="button" button style="margin: 100;"><font color="blue"><h4>ADD</h4></font></button></center>
+<br/>
+<p><font color="blue"><Center>Output</Center></font></p>
+<center><input type="text" name="secondinput" id="res" readonly=""/></center>
+</div>
+</body>
+<script type="text/javascript">
+    function cal(){
+    var opr1 = document.getElementById('first').value;
+    var opr2 = document.getElementById('second').value;
+    var ope = document.getElementById('ope').value;
+    if(ope =='+'){
+        var res =parseInt(opr1) + parseInt(opr2);
+    }
+    if(ope =='-'){
+        var res =parseInt(opr1) - parseInt(opr2);
+    }
+    if(ope =='*'){
+        var res =parseInt(opr1) * parseInt(opr2);
+    }
+    if(ope =='/'){
+        var res =parseInt(opr1) / parseInt(opr2);
+    }
+    document.getElementById('res').value = res;
+}
+</script>
+</html>

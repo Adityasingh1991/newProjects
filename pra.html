@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Current Date and Time: <span id="txt"></span>
+    <br/>  
+    Floor of 4.6 is: <span id="p4"></span>
+    <br/>
+    <script type="text/javascript">
+    var today=new Date();  
+document.getElementById('txt').innerHTML=today; 
+document.getElementById('p4').innerHTML=Math.floor(4.6);      
+function msg(){  
+ alert("Hello Javatpoint");  
+}  
+var marks=[50,40,45,37,20];  
+          
+          function check(value)  
+          {  
+            return value>30;    
+          }  
+            
+          document.writeln(marks.filter(check)); 
+var a=20;  
+if(a>10){  
+document.write("value of a is greater than 10");  
+}  
+var x = 10;  
+var y = 20;  
+var z = x + y;  
+document.write(z);
+
+var data=200;//gloabal variable  
+function a(){  
+document.writeln(data);  
+}  
+function b(){  
+document.writeln(data);  
+}  
+a();//calling JavaScript function
+b();  
+
+</script>  
+</head>   
+<p>Welcome to Javascript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>
+</html
